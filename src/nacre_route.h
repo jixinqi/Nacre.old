@@ -3,21 +3,11 @@
 
 namespace nacre
 {
-    class route
+    class route : public manager<method, handle>
     {
     public:
-        route() = default;
         virtual ~route() = default;
-
-    protected:
-    private:
-    };
-    
-    class route_manager : public manager<uri, route>
-    {
-    public:
-        route_manager() = default;
-        virtual ~route_manager() = default;
+        using manager<method, handle>::manager;
 
     protected:
     private:

@@ -9,7 +9,7 @@ namespace nacre
         application() = default;
         virtual ~application() = default;
 
-        route_manager routes;
+        manager<uri, route> routes;
 
     protected:
     private:

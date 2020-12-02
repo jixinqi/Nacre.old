@@ -2,6 +2,8 @@ set (CMAKE_CXX_STANDARD 17)
 
 set (NACRE_SRC_FILES
     "main.cpp"
+    "nacre_method.cpp"
+    "nacre_handle.cpp"
     "nacre_uri.cpp"
     "nacre_route.cpp"
     "nacre_application.cpp"
