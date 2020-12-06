@@ -17,6 +17,8 @@
 #include <boost/xpressive/xpressive.hpp>
 #include <boost/algorithm/string.hpp>
 
+#include "magic_enum/magic_enum.hpp"
+
 #include "design_patterns/nacre_manager.hpp"
 #include "nacre_method.h"
 #include "nacre_handle.h"

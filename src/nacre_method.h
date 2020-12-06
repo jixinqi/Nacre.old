@@ -12,7 +12,12 @@ namespace nacre
     class method
     {
     public:
-        method(http_method _value);
+
+        template<typename Method>
+        method(Method && _value)
+            : value(magic_enum::enum_cast<http_method>(_value).value())
+        {
+        }
 
         const bool operator<(const method& other) const;
 
